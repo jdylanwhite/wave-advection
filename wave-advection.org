@@ -1,0 +1,19 @@
+#+title: Wave Advection
+#+author: J. Dylan White
+#+STARTUP: latexpreview
+
+The one-dimensional advection equation of some scalar quantity $u$ can be written:
+
+\begin{displaymath}
+\frac{\partial \psi}{\partial t} = -u \frac{\partial \psi}{\partial x}
+\end{displaymath}
+
+where $u$ is the speed of the advection.
+
+\begin{displaymath}
+\frac{\psi_i^{n+1} - \psi_i^{n}}{\Delta t} = -u \frac{\psi^n_{i+1} - \psi^n_{i}}{\Delta x}
+\end{displaymath}
+
+\begin{displaymath}
+\psi_i^{n+1} = \psi_i^n - \frac{u \Delta t}{\Delta x} (\psi_{i+1}^n - \psi_{i}^n)
+\end{displaymath}
